@@ -7,6 +7,9 @@
 
 using namespace std;
 
+/**
+ * 변수 선언과 규칙
+ */
 void chapter_03() {
     int a;
     a = 7;
@@ -17,6 +20,9 @@ void chapter_03() {
     cout << "a = " << &a << ", b = " << &b << endl;
 }
 
+/**
+ * 정수형 자료형과 실수형 자료형
+ */
 void chapter_04() {
     int n_int = INT_MAX;
     short n_short = SHRT_MAX;
@@ -41,6 +47,9 @@ void chapter_04() {
     cout << a1 << ", " << b1 << endl;
 }
 
+/**
+ * 문자형 자료형과 bool형 자료형
+ */
 void chapter_05() {
     int a = 77;
     char b = a;
@@ -55,6 +64,9 @@ void chapter_05() {
     cout << a1 << ", " << b2 << ", " << c << endl;
 }
 
+/**
+ * const 제한자와 데이터형 변환
+ */
 void chapter_06() {
     // 반지름 x 반지름 x 파이
     int r = 3;
@@ -71,6 +83,9 @@ void chapter_06() {
     cout << static_cast<int>(ch) << endl;
 }
 
+/**
+ * C++ 산술연산자와 auto
+ */
 void chapter_07() {
     int a = 3 + 2;
     cout << a << endl;

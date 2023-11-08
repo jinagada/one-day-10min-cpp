@@ -5,6 +5,9 @@
 
 //using namespace std;
 
+/**
+ * Hello, C++!
+ */
 void hello_world() {
     std::cout << "Hello, ";
     std::cout << "World!" << std::endl;
