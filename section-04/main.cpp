@@ -9,6 +9,7 @@ using namespace std;
  * if 구문과 if else 구문
  */
 void chapter_19() {
+    cout << "chapter_19" << endl;
     if (true) {
         cout << "조건이 ";
         cout << "참입니다." << endl;
@@ -40,6 +41,7 @@ void chapter_19() {
  * 논리 표현식
  */
 void chapter_20() {
+    cout << "chapter_20" << endl;
     cout << "당신의 나이를 입력하십시오." << endl;
     int age;
 //    cin >> age;
@@ -56,6 +58,7 @@ void chapter_20() {
  * switch 구문과 break continue 구문
  */
 void chapter_21() {
+    cout << "chapter_21" << endl;
     int a;
 //    cin >> a;
     switch (a) {

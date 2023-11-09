@@ -9,6 +9,7 @@ using namespace std;
  * 반복문 : 반복문의 정의와 for문의 형태
  */
 void chapter_15() {
+    cout << "chapter_15" << endl;
     char a[10] = { 'a', 'b', 'c', 'd', 'e' };
     cout << a[0] << endl;
     cout << a[1] << endl;
@@ -24,6 +25,7 @@ void chapter_15() {
  * 반복문 : 증가/감소 연산자와 관계표현식
  */
 void chapter_16() {
+    cout << "chapter_16" << endl;
     int a = 10;
     int b = 10;
     cout << "a는 " << a << ", b는 " << b << endl;
@@ -39,6 +41,7 @@ void chapter_16() {
  * while 루프와 do while 루프
  */
 void chapter_17() {
+    cout << "chapter_17" << endl;
     int i = 0;
     for (i; i < 3; i++) {
         cout << i << endl;
@@ -84,6 +87,7 @@ void chapter_17() {
  * 반복문의 활용
  */
 void chapter_18() {
+    cout << "chapter_18" << endl;
     int a[10] = { 1, 3, 5, 7, 9 };
     for (int i = 0; i < 5; i++) {
         cout << a[i];

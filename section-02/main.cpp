@@ -9,6 +9,7 @@ using namespace std;
  * 배열과 문자열
  */
 void chapter_08() {
+    cout << "chapter_08" << endl;
     short month[12] = { 1, 2, 3 };
     cout << month[3] << endl;
     short month1[] = { 1, 2, 3 };
@@ -23,6 +24,7 @@ void chapter_08() {
  * 사용자 입력과 string
  */
 void chapter_09() {
+    cout << "chapter_09" << endl;
     const int size = 15;
     char name1[size];
     char name2[size] = "C++programing";
@@ -52,6 +54,7 @@ void chapter_09() {
  * 구조체
  */
 void chapter_10() {
+    cout << "chapter_10" << endl;
     // 축구선수
     struct MyStruct {
         string name;
@@ -83,6 +86,7 @@ void chapter_10() {
  * 공용체와 열거체
  */
 void chapter_11() {
+    cout << "chapter_11" << endl;
     union MyUnion {
         int intVal;
         long longVal;
@@ -114,6 +118,7 @@ void chapter_11() {
  * 포인터와 메모리 해제 (1)
  */
 void chapter_12() {
+    cout << "chapter_12" << endl;
     int val = 3;
     cout << &val << endl;
     int *a; // c style
@@ -134,6 +139,7 @@ void chapter_12() {
  * 포인터와 메모리 해제 (2)
  */
 void chapter_13() {
+    cout << "chapter_13" << endl;
     int a;
     int* b = &a;
     int* pointer = new int;
@@ -164,6 +170,7 @@ struct MyStruct {
     int age;
 };
 void chapter_14() {
+    cout << "chapter_14" << endl;
     char animal[SIZE];
     char* ps;
     cout << "동물 이름을 입력하십시오\n";

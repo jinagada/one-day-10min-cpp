@@ -12,6 +12,7 @@ const float PIE = 3.14;
 void cheers(int n);
 float circle(int x);
 void chapter_22() {
+    cout << "chapter_22" << endl;
     int a;
     cout << "하나의 수를 입력하십시오." << endl;
 //    cin >> a;
@@ -38,6 +39,7 @@ float circle(int x) {
  */
 void helloCPP(int, int);
 void chapter_23() {
+    cout << "chapter_23" << endl;
     int times = 2, times2 = 5;
     cout << "정수를 입력하십시오." << endl;
 //    cin >> times;
@@ -61,6 +63,7 @@ void helloCPP(int n, int m) {
 int sumArr(int*, int);
 int sumArr2(int*, int*);
 void chapter_24() {
+    cout << "chapter_24" << endl;
     const int SIZE = 8;
     int arr[SIZE] = { 1, 2, 4, 8, 16, 32, 64, 128 };
     cout << "size of arr " << sizeof arr << endl;
@@ -101,6 +104,7 @@ const int minsPerHr = 60;
 Time sum(Time*, Time*);
 void showTime(Time);
 void chapter_25() {
+    cout << "chapter_25" << endl;
     Time day1 = { 5, 45 };
     Time day2 = { 4, 55 };
     Time total = sum(&day1, &day2);
@@ -119,11 +123,38 @@ void showTime(Time t1) {
     cout << t1.hours << "시간, " << t1.mins << "분 입니다." << endl;
 }
 
+/**
+ * 재귀함수와 함수를 지시하는 포인터
+ */
+void countDown(int);
+int func(int);
+void chapter_26() {
+    cout << "chapter_26" << endl;
+    countDown(1);
+    cout << func << endl; // 버전이 달라서 함수의 주소를 출력하지 않음
+    int (*pf)(int);
+    pf = func;
+    cout << (*pf)(3) << endl;
+}
+
+void countDown(int n) {
+    cout << "Counting..." << n << endl;
+    if (n > 0) {
+        countDown(n - 1);
+    }
+    cout << n << "번째 재귀함수" << endl;
+}
+
+int func(int n) {
+    return n + 1;
+}
+
 int main() {
     chapter_22();
     chapter_23();
     chapter_24();
     chapter_25();
+    chapter_26();
     return 0;
 }
 
